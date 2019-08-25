@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    display: flex;
+}
+
+h2 {
+    margin: 0;
+    font-family: "MiradPro-Regular", sans-serif;
+    font-size: 35px;
+    letter-spacing: -1px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    background-color: #fafafa;
+}
+
+.header {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    margin-right: 130px;
+    width: 135px;
+    height: 160px;
+    background: url("images/Logo.png") no-repeat;
+    background-size: contain;
+}
+
+.start-date {
+    margin-left: 18px;
+    margin-top: 5px;
+    display: inline-block;
+    border: #4090db 1px solid;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 15px;
+    line-height: 16px;
+    color: #4090db;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.datepicker-form {
+    font-family: 'Tahoma Regular', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.datepicker {
+    margin-left: 14px;
+    margin-right: 10px;
+    width: 180px;
+}
+
+.prj-data {
+    font-size: 17px;
+    line-height: 24px;
+    color: #3d4044;
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.number {
+    font-family: "Proxima Nova-Bold", sans-serif;
+    font-weight: bold;
+}
+
+.gallery {
+    margin: auto;
+    width: 936px;
+    padding-top: 70px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+}
+
+.col {
+    width: 33.3333%;
+}
+
+.card {
+    padding: 15px;
+    position: relative;
+}
+
+.info-about-photo {
+    font-family: "Proxima Nova-Semibold", sans-serif;
+    font-weight: bolder;
+    color: #fff;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    bottom: 15px;
+    right: 15px;
+}
+
+.info-about-photo:hover {
+    opacity: 0;
+}
+
+.stats {
+    position: absolute;
+    top: 125px;
+    left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.custom-stats {
+    top: 155px;
+}
+
+.image-update-time {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.stats li {
+    font-size: 17px;
+    line-height: 24px;
+    width: 33.3333%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.number {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.like {
+    margin-left: 15px;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url("images/ic_favorite_black_24dp_2x1.png") no-repeat;
+    background-size: contain;
+}
+
+.comment {
+    margin-left: 10px;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url("images/ic_mode_comment_black_24dp_2x.png") no-repeat;
+    background-size: contain;
+}
+
+.play {
+    margin-left: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url("images/ic_play_arrow_black_24dp_2x.png") no-repeat;
+    background-size: contain;
+}
+
+.layer {
+    position: absolute;
+    top: 15px;
+    right: 12px;
+    height: 22px;
+    width: 30px;
+    background: url("images/Layer-4.png") no-repeat;
+    background-size: contain;
+}
+
+::-webkit-inner-spin-button {
+    display: none;
+}
+
+.load-more {
+    font-family: 'Tahoma Regular', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px;
+    width: 125px;
+    text-align: center;
+    border: solid 1px #000000;
+    border-radius: 15px;
+    margin: 0 auto 75px;
+}
+
+@media (max-width: 950px) {
+    .stats {
+        top: 60%;
+    }
+
+    .custom-stats {
+        top: 60%;
+    }
+
+    .logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .gallery {
+        padding-top: 30px;
+        width: 90%;
+    }
+
+    .col {
+        width: 50%;
+    }
+
+    .load-more {
+        width: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats {
+        top: 40%;
+    }
+
+    .custom-stats {
+        top: 40%;
+    }
+
+    .stats li {
+        font-size: 14px;
+    }
+
+    .header {
+        display: block;
+        text-align: center;
+    }
+
+    .title {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .prj-data {
+        padding-top: 12px;
+        justify-content: center;
+    }
+
+    .logo {
+        margin: auto;
+        width: 90px;
+        height: 90px;
+    }
+
+    .gallery {
+        padding-top: 25px;
+        width: 90%;
+    }
+
+    .col {
+        width: 50%;
+    }
+
+    .load-more {
+        width: 55%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .col {
+        width: 100%;
+    }
+
+    .stats {
+        left: 20%;
+        top: 40%;
+    }
+
+    .datepicker-form {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 533px) {
+    .title {
+        display: block;
+    }
+
+    .prj-data {
+        font-size: 13px;
+    }
+
+    .datepicker-form {
+        padding: 5px;
+        display: block;
+        text-align: -webkit-center;
+        width: 100%;
+    }
+
+    .datepicker {
+        padding-top: 5px;
+        width: 70%;
+    }
+}
